@@ -1,0 +1,30 @@
+1. <hr>—代表著一條水平標線
+2. =可以代替echo---<?= $nweek ?>
+3. 定界符號 $s = <<<MultiLines Line 1 Line 2 MultiLines; 
+4. ＝＝＝型態和內容相同 ＝＝ 內容相同 ex 數字12和字串12是相同 ！＝＝ 形態和內容都不同
+5. ’12’+’13’=25  . — 字串相連（就算型態是數字）12.13=1213
+6. define(“pi”,3.14) echo pi; // pi是常數不用＄//定義常數
+7. include.once || include// 會偵測先前是否引用過，沒找到還坐下一行程式
+8. require.once || require // 沒找到就網頁就直接死掉(強硬)
+9. gettype($x) // 顯示變數型態
+10. 改錯誤訊息顯示權限popinfo(); // 找 Loaded Cod… file:－－>error_reporting & display_rror=On
+11. @—>如果那行有錯不要顯示訊息，不管你有沒有改權限．
+12. unset($x); // 註銷掉x變數
+13. var_dump($_POST) 以及print_r() // 都是檢查資料是否傳送並顯示陣列
+14. isset() // 裡面資料是否存在
+15. global() //  可以觀看全域變數或建立新的全域變數	
+16. Utf8 一個中文字佔３bytes strlen();
+17. substr($s,3,4) //  從第三個位置抓四個資料
+18. str_replace(“12”,”-”,$s); // 在字串找12換成-
+19. strpos($s,’12’,0) // 從第0個位置找到他在第幾個位置 //   當找不到回傳空(boolean false)
+20. &nbsp; // 空格
+21. 將<p>改成<pre> //預先格式化
+22. foreach(a as b) //跑陣列每一筆
+23. natsort(); // 自然排序法 用阿拉伯數字進行比較 sort() ;//  用字串來比較
+24. <?php echo $a; ?>. == <?= $a; ?>.
+25. file(“檔名”) // 陣列呈現 file_get_contents // 字串呈現
+26. enctype // 在發送到服務器之前應該如何對表單數據進行編碼。
+27. htmlspecialchars() 函数把預定義的字符轉換為 HTML 實體。
+28. fgets($f); //取一行資料
+29. 在class 如果不宣告public 或private 預設為public
+30. setcookie // 請瀏覽器幫忙記錄資料，最多4KB

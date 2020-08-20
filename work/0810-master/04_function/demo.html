@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function showstar(count){
+            if( count<１ || count>22 || count==4 )
+                return "請在１～２２之間，但不要大於４";
+            
+            let star="";
+            for(let i=1;i<=count;i++){
+                star += "*";
+                return star;
+            }
+
+            // if(count<1)
+            //     return "請大於１";
+            // else if(count>21)
+            //     return "請小於２１";
+            // else if(count==4)
+            //     return "不能等於４";
+            // else{
+            //     let star="";
+            //     for(let i=1;i<=count;i++){
+            //         star += "*";
+            //             return star;
+            //     }
+            // }
+        }
+        let ans=showstar(29);
+        alert(ans);
+
+        
+    </script>
+</body>
+</html>

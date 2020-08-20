@@ -1,0 +1,40 @@
+1. UML 統一塑模語言（英語：Unified Modeling Language
+2. MSF process model
+3. ER MODEL
+4. 一對多  黑點對象 實體線
+5. Default 預設值
+6. 修改Modify 預設值會不見
+7. 刪掉資料表 drop table app;
+8. 刪掉資料庫 drop database app;
+9. create table friends default character set utf8;
+10. create database friends default character set utf8;
+11. auto increment primary key; 自行增加數字
+12. Create index idv_tel on student(tel, name)索引排次序，先用tel如果tel一樣，就用name／索引浪費空間＆增加新增修改的時間
+13. Id int auto_increment not null primary key -not null的欄位就一定要填要不然資料不會進去
+14. 哪些指令用最多／哪些是重要的人下的指令／哪些指令不能等／哪些指令下下長時間
+15. Alter table db08 add constraint chk_data check(邏輯條件)----檢查
+16. Unique 建立唯一性，不要重複
+17. engine=MyISAM(少紀錄log/ 無法rollback)/Merge/InnoDB（紀錄log/ 可rollback）
+18. set global  max_connections=10;
+19. Status 看自己connections id當開另一個視窗會有不一樣的id（select１＋１）可以用kill 某id，他就不能做任何事情
+20. user帳號清單和權限, db資料庫給的權限, tables_priv資料表給的權限
+21. SET sql_mode='traditional';/ show variables like ‘sql_mode’ 
+22. Zerofill 補滿零data int(5) zerofill not null－－－00010
+23. Char（使用在已知固定長度，效能高，但浪費空間）
+24. varchar(記錄資料和長度，，浪費效能，但比較省空間)varchar(5(這是字數))
+25. Decimal 用來小數點 ex(5,2)—五個位數有兩個是小數點，數值為123.125 顯示為123.13（四捨五入）
+26. Timestamp更新資料時一併變更時間
+27. current_date() 顯示到日
+28. current_timestamp()顯示到秒
+29. Lock中write權限比較大，所以當unlock時會先解write在解read(所以有write，read就掛不是去)
+30. Write lock自己寫其他人都不能讀（傳統）
+31. Read lock 只可以讀不能修改（傳統）
+32. Lock in share mode（傳統）
+33. MySql（現在）在這之前你都可以讀(select)，但當你要要進入時（等待）Select …….for update（等write lock可以掛上去)
+34. MySql（現在）start transaction 過程update都是測試，當commit就定案了，但rollback就會回到原來不變
+35. set session transaction isolation level read committed;－－－－－對方commit，才能看到更新(同34)
+36. set session transaction isolation level repeatable read;----就算對方commit，也讀不到更新，要自己commit/rollback
+37. 交易異動1.單元性（all or nothing）2.正確性3.永久性4.隔離性
+38. update和delect和select有limit
+39. Lab_Export_import  匯入匯出方法及ignore/replace(檔案重複id要無視還是取代)
+40. ignore 2 lines－－－－先跳過兩行在開始執行

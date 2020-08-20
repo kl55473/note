@@ -1,0 +1,24 @@
+CREATE DATABASE lab0819db DEFAULT CHARACTER SET utf8;
+
+use lab0819db;
+
+CREATE table city
+(
+    cityId int primary key,
+    cityName varchar(20)
+);
+
+insert into city values (2,'Taipei'),(4,'TaiChung'),(6,'TaiNan');
+
+CREATE table employee
+(
+    employeeId int auto_increment primary key,
+    firstName varchar(20),
+    lastName varchar(20),
+    cityId int
+);
+
+insert into employee(firstName,lastName,cityId) values ('Jeremy','Lin',2),('Yvonne','Wu',6);
+
+
+select e.employeeId,firstName,lastName,e.cityId,cityName form city c join employee e on e.cityId=c.cityId;

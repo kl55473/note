@@ -1,0 +1,59 @@
+﻿create database workout;
+use workout;
+
+-- 建立資料表
+create table friends
+(
+  fid int auto_increment not null primary key,
+  cname char(10) null,
+  ename varchar(30) null,
+  tel varchar(30) null
+);
+
+
+-- 修改資料表結構 - 加入新的欄位
+alter table friends
+  add email varchar(30) default 'someone@somewhere.com';
+
+-- 修改資料表結構 - 變更欄位定義
+alter table friends
+  modify email varchar(40);
+
+describe friends;
+
+alter table friends
+  modify email varchar(40) default 'who@where.com';
+
+describe friends;
+
+-- -- 修改資料表結構 - 刪除欄位
+alter table friends
+  drop column email;
+
+
+
+create table customer(
+    customerId int primary key,
+    companyName varchar(11) not null);
+
+create table orders(
+    orderId int primary key,
+    customerId int not null);
+
+    alter table orders add constraint fk_cumster_orders 
+    foreign key (customerId) references 
+    customer(customerId) 
+    on update cascade on delete cascade;
+
+    insert into customer values(1,'aaa'),(2,'bbb'),(3,'ccc');
+    insert into orders values(1,1),(2,3),(3,1);
+
+    update orders set customerId=100 where customerId=1;
+
+    alter table customer add constraint uc unique(companyName);
+    insert into customer values(4,'AAA');
+    alter table customer drop index uc;
+
+    create unique index idx_company on customer(companyName);
+    insert into customer values(5,'AAA');
+    drop index idx_company on customer;

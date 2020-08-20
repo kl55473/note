@@ -1,0 +1,12 @@
+1. $(“input[name="radioGroup"]:eq(2)"); $("input[name="radioGroup"]").eq(2);
+2. prop 獲取和設定元素屬性
+3. devicePixelRatio解析度 / px長度
+4. 屬性－形容詞   方法－動詞    事件－時間點
+5. change(function(){}) 當元素的值發生改變時，會發生 change 事件。
+6. #letter option:selected 在option 選單中選擇(selected)
+7. trigger() 支援透過程式化的方式觸發某個特定事件 trigger(事件)/$("#letter").trigger("change");
+8. C —post 增加 R—GET 查詢 U—put  修改 D—Delete  刪除
+9. append() appendTo()在被選元素的结尾（仍然在内部）插入指定内容。 $("#latestNews").append($li);
+       $li.appendTo("#latestNews"); 倒過來
+10. prepend()被选元素的开头（仍位于内部）插入指定内容。
+11. closest()

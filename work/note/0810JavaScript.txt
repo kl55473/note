@@ -1,0 +1,25 @@
+1. var／const／let宣告變數
+2. var的範圍比較大，const和let只能在原大括號
+3. 多用使用let(不可重複宣告)少用var
+4. Const是常數不變，但裡面還是可以變                                          
+5. ``及${}
+6. readLine();讀行
+7. x.toString() —數字轉字串
+8. Number()——字串轉數字
+9. 變數預設值為true
+10. 要印出符號，就在符號前面加 \(倒斜線)
+11. for(let data of dataList)——顯示內容(會跑空值) for(let data in dataList)——顯示編號，in(index),(不會跑空值)
+12. typeof data，當值為０他才不回以為是空值 ===
+13. Join陣列資料串再一起data.join(“|”)，1|2|3|4
+14. dataList.splice(第幾個位置,殺掉幾個,新加入的)
+17. for/in與forEach會跳過空元素 for與for/of則不會跳過空元素
+19. for和for/in，我們可以訪問陣列的下標，而不是實際的陣列元素值 for/of，則可以直接訪問陣列的元素值 forEach()，則可以同時訪問陣列的下標與元素值
+20. Data.map  和 data.filter要用return#function# / =>
+21. Data.map像鏡子對應陣列中每一個位置
+22. Filter－－－選要的
+23. constructor建構子 在class 執行new建構子就會跟著執行
+24. this._weight   _點線    get(return) 是傳結果，set是改變屬性，效率高但規則不嚴謹
+25. promise作法 ＊async要搭配await ＊先去try，當try裡有錯誤就跳去catch ＊05_join(不同步)只花3秒，04_StillStepByStep(同步)花５秒
+26. Console.assert 會在檢查內出現錯誤
+27. 資源晚在程式結束才載入，所以要讓資源到位要用window.onload=init;
+28. showToast 
