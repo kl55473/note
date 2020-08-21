@@ -1,8 +1,0 @@
-1. @mysqli_connect("localhost", "root", "root",null,8809)// 第三個是密碼，第四個是要使用的資料庫，第五個是port號
-2. mysqli_query(連接伺服器的變數,”set names utf8”)//執行某個針對資料庫的查詢。
-3. field_count // 多少欄位
-4. num_rows  // 幾筆資料
-5. -> // object 
-6. mysqli.fetch.assoc();//按照順序讀取資料
-7. $comment = <<<sqlstatus select id,firstName,lastName,title,picture,(select count(*) from employee where managerId=e.id) as reportCount from employee e
-    sqlstatus(隨便寫，也可以寫multit);
