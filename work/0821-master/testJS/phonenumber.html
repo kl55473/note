@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="echo.php">
+        China Airline flight number:
+        <!-- <input type="text" name="flightNumber" pattern="((?\(0\d\)?)-?)?\d{7,8}"> <br> <input type="submit" name="btnOK" id="btnOK" value="OK"> -->
+        <input type="text" name="flightNumber" pattern="\w+([.-]\w+)*@\w+(.\w+)+"> <br> <input type="submit" name="btnOK" id="btnOK" value="OK">
+        <input type="text" name="flightNumber" pattern="\d{3}-\d{3}""> <br> <input type="submit" name="btnOK" id="btnOK" value="OK">
+        </form>
+
+
+        <!-- 
+        who.yvonne.wu@yahoo.com.tw
+        \w+@yahoo.com 
+        \w+([.-]\w+)*@\w+(.\w+)+
+        -->
+</body>
+</html>
